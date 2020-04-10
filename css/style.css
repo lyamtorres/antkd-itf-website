@@ -23,31 +23,52 @@ button {
 }
 
 header {
+    height: 20vh;
+    padding: 1rem 5%;
     background-color: var(--terciary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+}
+
+nav {
+    height: 20vh;
+    display: inherit;
+    align-items: inherit;
 }
 
 .logo {
+    height: 100px;
+    padding-right: 1rem;
     cursor: pointer;
 }
 
 .menu {
+    height: inherit;
+    display: inherit;
+    align-items: inherit;
     list-style: none;
 }
 
 .menu li {
-    padding: 0 1rem;
-    display: inline-block;
+    height: inherit;
 }
+
 .menu li a {
-    transition: all 0.3s ease 0s;
+    height: inherit;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.1s ease 0s;
 }
 
 .menu li a:hover {
-    color: var(--secondary-color);
+    color: var(--terciary-color);
+    background-color: var(--primary-color);
+}
+
+.cta {
+    padding-left: 1rem;
 }
 
 button {
@@ -61,4 +82,20 @@ button {
 
 button:hover {
     background-color: var(--primary-color);
+}
+
+.landing {
+    height: 80vh;
+    background-color: #BFC0C2;
+}
+
+@media screen and (max-width: 1017px) {
+
+    .menu {
+        display: none;
+    }
+
+    .cta {
+        display: none;
+    }
 }
