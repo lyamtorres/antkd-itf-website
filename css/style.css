@@ -62,9 +62,52 @@ nav {
     transition: all 0.1s ease 0s;
 }
 
-.menu li a:hover {
+.menu li a:hover,
+#submenu1:hover .menu li a { /* ¿Como mantengo el hover mientras nevego los submenus? */
     color: var(--terciary-color);
     background-color: var(--primary-color);
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color);
+    list-style: none;
+    display: none;
+    position: absolute; /* Corrige la separación entre los elementos de la barra de navegación */
+}
+
+#activation1:hover #submenu1 {
+    display: block;
+}
+
+#activation2:hover #submenu2 {
+    display: block;
+}
+
+#activation3:hover #submenu3 {
+    display: block;
+}
+
+#activation4:hover #submenu4 {
+    display: block;
+}
+
+#activation5:hover #submenu5 {
+    display: block;
+}
+/*
+#submenu1 li:hover .menu li a {
+    background-color: red;
+}
+*/
+
+.dropdown-menu li a {
+    padding: 1rem;
+    color: var(--terciary-color);
+    font-size: 0.75rem;
+}
+
+.dropdown-menu li a:hover {
+    color: var(--secondary-color);
 }
 
 .cta {
