@@ -1,15 +1,15 @@
+:root {
+    --primary-color: #03306B;
+    --secondary-color: #2F9AD8;
+    --terciary-color: #FFFFFF;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #03306B;
-    --secondary-color: #2F9AD8;
-    --terciary-color: #FFFFFF;
 }
 
 li, a, button {
@@ -45,9 +45,9 @@ nav {
 
 .menu {
     height: inherit;
+    list-style: none;
     display: inherit;
     align-items: inherit;
-    list-style: none;
 }
 
 .menu li {
@@ -57,56 +57,44 @@ nav {
 .menu li a {
     height: inherit;
     padding: 0 1rem;
+    transition: all 0.1s ease 0s;
     display: flex;
     align-items: center;
-    transition: all 0.1s ease 0s;
 }
 
-.menu li a:hover,
-#submenu1:hover .menu li a { /* ¿Como mantengo el hover mientras nevego los submenus? */
+.menu li:hover,
+.menu li:hover > a {
+    background-color: var(--primary-color);
     color: var(--terciary-color);
-    background-color: var(--primary-color);
 }
 
-.dropdown-menu {
+.dropdown {
     background-color: var(--primary-color);
+    visibility: hidden;
+    opacity: 0;
     list-style: none;
-    display: none;
     position: absolute; /* Corrige la separación entre los elementos de la barra de navegación */
+    display: none;
 }
 
-#activation1:hover #submenu1 {
+ul li:hover > .dropdown,
+.dropdown:hover {
+    visibility: visible;
+    opacity: 1;
     display: block;
 }
 
-#activation2:hover #submenu2 {
-    display: block;
+.dropdown li {
+    width: 12rem;
 }
 
-#activation3:hover #submenu3 {
-    display: block;
-}
-
-#activation4:hover #submenu4 {
-    display: block;
-}
-
-#activation5:hover #submenu5 {
-    display: block;
-}
-/*
-#submenu1 li:hover .menu li a {
-    background-color: red;
-}
-*/
-
-.dropdown-menu li a {
-    padding: 1rem;
+.dropdown li a {
+    padding: 1.5rem;
     color: var(--terciary-color);
     font-size: 0.75rem;
 }
 
-.dropdown-menu li a:hover {
+.dropdown li a:hover {
     color: var(--secondary-color);
 }
 
