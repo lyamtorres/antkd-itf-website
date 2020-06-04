@@ -98,21 +98,32 @@ ul li:hover > .dropdown,
     color: var(--secondary-color);
 }
 
-.cta {
-    padding-left: 1rem;
+.hamburger-button {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.facebook-icon {
+    width: 35px;
+    height: 39px;
+    /*margin-left: 2rem;*/
 }
 
 button {
-    padding: 9px 25px;
-    background-color: var(--secondary-color);
-    border: none;
-    border-radius: 50px;
+    margin-left: 2rem;
+    background-color: white;
+    border: 0;
     cursor: pointer;
+}
+
+.facebook-icon {
+    fill: #395185;
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
-    background-color: var(--primary-color);
+.facebook-icon:hover {
+    fill: #1877F2;
 }
 
 .landing {
@@ -121,12 +132,24 @@ button:hover {
 }
 
 @media screen and (max-width: 1017px) {
+    .hamburger-button {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
 
     .menu {
+        visibility: hidden;
+        opacity: 0;
         display: none;
     }
 
-    .cta {
-        display: none;
+    .menu.is-active {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
     }
 }
