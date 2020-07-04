@@ -1,4 +1,5 @@
 # ANTKD ITF Website
+Nicaraguan Taekwon-Do Association website featuring content such as news, history, philosophy and moral culture of Taekwon-Do.
 
 * Live project: https://lyamtorres.github.io/antkd-itf-website/
 
