@@ -5,7 +5,6 @@
 }
 
           /*
-
             || General Styles 
             
           */
@@ -30,6 +29,7 @@ hr {
 h1 {
     font-size: 1.563rem;
     font-weight: 700;
+    color: var(--secondary-color);
 }
 
 h2 {
@@ -135,8 +135,21 @@ footer {
 }
 
 .container {
-    padding: 1rem 5%;
     width: 100%;
+    padding: 1rem 5%;
+}
+
+.main-title {
+    height: 25vh;
+    padding-top: 25vh;
+    padding-bottom: 5vh;
+  
+}
+
+.main-title .container {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
 }
 
 .menu li {
@@ -179,7 +192,6 @@ ul li:hover > .dropdown,
 }
 
           /*
-
             || Landing Styles 
             
           */
@@ -212,7 +224,6 @@ footer .container p {
 }
 
           /*
-
             || Instructors Styles
             
           */
@@ -223,7 +234,7 @@ footer .container p {
 }
 
 .instructors .container {
-    margin: 4rem 0;
+    margin: 4rem auto;
     display: flex;
 }
 
@@ -258,13 +269,12 @@ footer .container p {
 
 .schools {
     height: auto;
+    margin-bottom: 2rem;
 }
 
 .schools .container {
     width: 65rem;
-    margin: 0 auto;
-    padding-top: 30vh;
-    padding-bottom: 10vh;
+    margin: 4rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;   
@@ -294,7 +304,6 @@ footer .container p {
 }
 
             /*
-
             || Taekwon-Do Page Styles
             
           */
@@ -325,13 +334,11 @@ footer .container p {
 }
 
           /*
-
             || Responsive Design: Inactive
             
           */
 
   /*
-
 @media screen and (max-width: 1017px) {
     .hamburger-button {
         width: 2rem;
@@ -341,18 +348,15 @@ footer .container p {
         opacity: 1;
         display: block;
     }
-
     .menu {
         visibility: hidden;
         opacity: 0;
         display: none;
     }
-
     .menu.is-active {
         visibility: visible;
         opacity: 1;
         display: flex;
     }
 }
-
 */
