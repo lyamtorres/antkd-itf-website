@@ -4,10 +4,11 @@
     --tertiary-color: #FFFFFF;
 }
 
-          /*
-            || General Styles 
-            
-          */
+            /*
+
+                || General Styles 
+
+            */
 
 * {
     margin: 0;
@@ -16,14 +17,6 @@
     /* font-family: 'Karla', sans-serif; */
     font-size: 16px;
     box-sizing: border-box;
-}
-
-
-hr {
-    width: 50vw;
-    margin: 4rem auto;
-    border-top: 2px solid var(--secondary-color);
-    border-radius: 5px;
 }
 
 h1 {
@@ -50,6 +43,13 @@ p {
     line-height: 1.4rem;
 }
 
+hr {
+    width: 50vw;
+    margin: 4rem auto;
+    border-top: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
 header {
     width: 100%;
     height: 20vh;
@@ -61,6 +61,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+section {
+    height: auto;
+    margin-bottom: 2rem;
+    background-color: var(--tertiary-color);
+}
+
+footer {
+    height: 10vh;
+    background-color: #b02b38;
 }
 
 nav {
@@ -80,16 +91,6 @@ li, a, button {
     color: var(--primary-color);
     font-weight: 500;
     text-decoration: none;
-}
-
-section {
-    height: 80vh;
-    background-color: var(--tertiary-color);
-}
-
-footer {
-    height: 10vh;
-    background-color: #b02b38;
 }
 
 .logo {
@@ -191,14 +192,16 @@ ul li:hover > .dropdown,
     color: var(--secondary-color);
 }
 
-          /*
-            || Landing Styles 
-            
-          */
+            /*
+
+                || Landing Styles 
+
+            */
 
 .landing {
     height: 100vh;
-  }
+    margin-bottom: 0;
+}
   
 .image-container {
     height: inherit;
@@ -220,18 +223,35 @@ footer .container {
 footer .container p {
     color: var(--tertiary-color);
     font-size: 0.8rem;
-    font-weight: 500;;
+    font-weight: 500;
 }
 
-          /*
-            || Instructors Styles
+            /*
+
+                || History in Nicaragua Styles
             
-          */
+            */
 
-.instructors {
-    height: auto;
-    margin-bottom: 2rem;
+.history-nicaragua .container {
+    margin: 4rem auto;
+    display: flex;
 }
+
+.history-nicaragua .text-content {
+    padding-right: 0;
+    padding-left: 2rem;
+}
+
+.history-nicaragua .image-content {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+            /*
+
+                || Instructors & Instructor Assistants Styles
+
+            */
 
 .instructors .container {
     margin: 4rem auto;
@@ -261,16 +281,11 @@ footer .container p {
     padding: 0 0 0 2rem; 
 }
         
-                  /*
-        
-                    || Schools Styles
-                    
-                  */
+            /*
 
-.schools {
-    height: auto;
-    margin-bottom: 2rem;
-}
+                || Schools Styles
+
+            */
 
 .schools .container {
     width: 65rem;
@@ -304,14 +319,10 @@ footer .container p {
 }
 
             /*
-            || Taekwon-Do Page Styles
-            
-          */
 
-.taekwondo {
-    height: auto;
-    margin-bottom: 2rem;
-}
+                || Taekwon-Do Section Styles
+
+            */
 
 .taekwondo .container {
     margin: 4rem 0;
@@ -333,10 +344,11 @@ footer .container p {
     max-height: 100%;
 }
 
-          /*
-            || Responsive Design: Inactive
-            
-          */
+            /*
+
+                || Responsive Design: Inactive
+
+            */
 
   /*
 @media screen and (max-width: 1017px) {
@@ -359,4 +371,5 @@ footer .container p {
         display: flex;
     }
 }
+
 */
