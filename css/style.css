@@ -75,6 +75,11 @@ nav {
     align-items: inherit;
 }
 
+strong {
+    font-weight: 500;
+    color: grey;
+}
+
 button {
     margin-left: 2rem;
     background-color: white;
@@ -222,7 +227,7 @@ footer .container p {
 
             /*
 
-                || Eventos y novedades
+                || Events Styles
 
             */
 
@@ -242,9 +247,17 @@ footer .container p {
     padding-left: 2rem;
 }
 
-.history-.events .image-content {
+.events .image-content {
     padding-right: 2rem;
     padding-left: 0;
+}
+
+.events .subtitle {
+    text-transform: uppercase;
+}
+
+.events button {
+    margin: 0;
 }
 
             /*
