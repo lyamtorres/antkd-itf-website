@@ -2,6 +2,7 @@
     --primary-color: #03306B;
     --secondary-color: #2F9AD8;
     --tertiary-color: #FFFFFF;
+    --quaternary-color: #B02B38;
 }
 
             /*
@@ -30,6 +31,12 @@ h2 {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
 }
 
 p {
@@ -73,11 +80,6 @@ nav {
     height: 20vh;
     display: inherit;
     align-items: inherit;
-}
-
-strong {
-    font-weight: 500;
-    color: grey;
 }
 
 button {
@@ -245,6 +247,9 @@ footer .container p {
 .events .text-content {
     padding-right: 0;
     padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .events .image-content {
@@ -252,12 +257,29 @@ footer .container p {
     padding-left: 0;
 }
 
-.events .subtitle {
+.events button {
+    margin: 0;
+}
+
+.events h2 {
+    padding: 0;
+}
+
+.events h2, h3 {
     text-transform: uppercase;
 }
 
 .events button {
-    margin: 0;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 5%;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    transition: all 0.3s ease 0s;
+}
+
+.events button:hover {
+    background-color: var(--secondary-color);
 }
 
             /*
