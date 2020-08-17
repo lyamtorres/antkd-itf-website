@@ -147,6 +147,15 @@ li, a, button {
     padding: 1rem 5%;
 }
 
+.grid {
+    width: 100%;
+    padding: 1rem 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+
 .main-title {
     height: 25vh;
     padding-top: 25vh;
@@ -345,13 +354,10 @@ footer .container p {
 
             */
 
-.schools .container {
-    width: 65rem;
+
+.schools .grid {
+    width: 80%;
     margin: 4rem auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    justify-content: center;
 }
 
 .card {
@@ -383,13 +389,10 @@ footer .container p {
 
             */
 
-.board .container {
-    width: 65rem;
+.board .grid {
+    width: 80%;
     margin: 4rem auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; 
-    justify-content: center;
+
 }
 
 .board .card {
@@ -464,21 +467,30 @@ footer .container p {
 
             */
 
-.photos .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.photos .grid {
+    margin: 4rem auto;
 }
 
 .photos img {
     width: 25rem;
-    padding: 0 2rem 2rem 0;
     transition: 0.5s;
     cursor: pointer;
 }
 
 .photos img:hover {
     transform: scale(1.1);
+}
+
+            /* 
+
+                || Videos Styles
+
+            */
+
+.videos .grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
             /*
